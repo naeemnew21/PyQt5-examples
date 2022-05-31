@@ -1,0 +1,8 @@
+this application is designed to create family tree
+it has some freatures : 
+            1. you can easily create parents and sons and add notes to them.
+            2. support arabic and english.
+            3. support themes change.
+            4. you can export your family as an image
+            
+ this application does not use database but uses txt files.
