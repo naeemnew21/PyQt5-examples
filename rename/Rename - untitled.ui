@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>rename</class>
+ <widget class="QWidget" name="rename">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>906</width>
+    <height>288</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Rename</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="photo.qrc">
+    <normaloff>:/icon/ren.png</normaloff>:/icon/ren.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+background-color: rgb(255, 255, 255);
+}
+QLineEdit {
+     border: 2px solid #3f48cc;
+     background: white;
+	
+	font: 75 14pt &quot;Arial&quot;;
+ }
+
+QLineEdit:hover {
+border-color:rgb(0, 255, 0);
+
+}
+QLabel {
+font: 75 14pt &quot;Arial&quot;;
+}
+
+QRadioButton {
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QPushButton {
+border-color: rgb(50, 0, 250);
+   border-radius: 30px;
+   color: #11FF00;
+   font-family: Arial;
+   font-size: 30px;
+   font-weight: 200;
+
+   background-color: #3200FA;
+
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+QPushButton:hover {
+   background: #2BAAFF;
+}
+
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="2" column="5">
+       <widget class="QCheckBox" name="checkBox">
+        <property name="text">
+         <string>extension</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" colspan="2">
+       <widget class="QLineEdit" name="LE_from"/>
+      </item>
+      <item row="2" column="1" colspan="4">
+       <widget class="QLineEdit" name="word"/>
+      </item>
+      <item row="4" column="1" colspan="5">
+       <widget class="QLineEdit" name="replace"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Mode : </string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_word">
+        <property name="text">
+         <string>Word      :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QRadioButton" name="rb_normal">
+        <property name="text">
+         <string>normal</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="4">
+       <widget class="QLineEdit" name="location">
+        <property name="minimumSize">
+         <size>
+          <width>350</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Replace :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Location :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="browse">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 14pt &quot;Arial&quot;;
+border: 2px solid rgb(50, 0, 250);</string>
+        </property>
+        <property name="text">
+         <string>Browse</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QRadioButton" name="rb_advanced">
+        <property name="text">
+         <string>advanced</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_from">
+        <property name="text">
+         <string>From</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4" colspan="2">
+       <widget class="QLineEdit" name="LE_to"/>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLabel" name="label_to">
+        <property name="text">
+         <string>To : </string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="contact">
+        <property name="styleSheet">
+         <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>&lt;a href=&quot;https://www.facebook.com/ahmednaeem1996&quot;&gt;Contact&lt;/a&gt;</string>
+        </property>
+        <property name="openExternalLinks">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1" colspan="4">
+       <widget class="QPushButton" name="rename_btn">
+        <property name="minimumSize">
+         <size>
+          <width>400</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 10px;</string>
+        </property>
+        <property name="text">
+         <string>Rename</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="5">
+       <widget class="QCheckBox" name="All_check">
+        <property name="text">
+         <string>All</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+     <zorder>location</zorder>
+     <zorder>label_4</zorder>
+     <zorder>replace</zorder>
+     <zorder>label_word</zorder>
+     <zorder>browse</zorder>
+     <zorder>word</zorder>
+     <zorder>label</zorder>
+     <zorder>LE_from</zorder>
+     <zorder>LE_to</zorder>
+     <zorder>label_from</zorder>
+     <zorder>label_to</zorder>
+     <zorder>label_6</zorder>
+     <zorder>rb_normal</zorder>
+     <zorder>rename_btn</zorder>
+     <zorder>checkBox</zorder>
+     <zorder>rb_advanced</zorder>
+     <zorder>contact</zorder>
+     <zorder>All_check</zorder>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QFrame" name="frame_2">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QListView" name="listView"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>location</tabstop>
+  <tabstop>browse</tabstop>
+  <tabstop>rb_normal</tabstop>
+  <tabstop>rb_advanced</tabstop>
+  <tabstop>word</tabstop>
+  <tabstop>checkBox</tabstop>
+  <tabstop>LE_from</tabstop>
+  <tabstop>LE_to</tabstop>
+  <tabstop>replace</tabstop>
+  <tabstop>rename_btn</tabstop>
+  <tabstop>listView</tabstop>
+ </tabstops>
+ <resources>
+  <include location="photo.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>help.png</file>
+	<file>zo.png</file>
+  </qresource>
+</RCC>

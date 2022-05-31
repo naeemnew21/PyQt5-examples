@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>ar.png</file>
+    <file>dis.png</file>
+	<file>like.png</file>
+	<file>eye1.png</file>
+	<file>eye2.png</file>
+  </qresource>
+</RCC>

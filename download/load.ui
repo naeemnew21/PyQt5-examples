@@ -1,0 +1,2355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>830</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>16</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="photo.qrc">
+    <normaloff>:/icon/ar.png</normaloff>:/icon/ar.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+
+QWidget
+{
+background-color: rgb(215, 253, 249);
+border : 10px;
+border-color: rgb(25, 150, 227);
+
+}
+
+
+
+QComboBox QAbstractItemView {
+     border: 2px solid darkgray;
+     selection-background-color: lightgray;
+}
+
+QPushButton{
+background-color: rgb(182, 182, 182);
+color: rgb(255, 255, 255);
+border:2px solid rgb(50, 0, 250);
+padding-left:5 solid;
+padding-right:5 solid;
+	font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+
+
+}</string>
+  </property>
+  <widget class="QFrame" name="frame_top">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>820</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #99d9ea;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="btn_exit">
+    <property name="geometry">
+     <rect>
+      <x>785</x>
+      <y>1</y>
+      <width>34</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>20</pointsize>
+      <weight>10</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+border:0px;
+  font-family: Arial;
+  color: #3f48cc;
+  font: 87 20pt &quot;Arial Black&quot;;
+  background-color: rgb(143, 214, 249);
+}
+
+QPushButton:hover {
+  
+ color: rgb(255, 255, 255);
+	background-color: rgb(255, 0, 0);
+
+}
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_min">
+    <property name="geometry">
+     <rect>
+      <x>749</x>
+      <y>1</y>
+      <width>34</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Blackoak Std</family>
+      <pointsize>28</pointsize>
+      <weight>10</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  border:0px;
+  font-family: Arial;
+  color: #00a2e8;
+  font: 87 28pt &quot;Blackoak Std&quot;;
+  background-color: rgb(143, 214, 249);
+}
+
+QPushButton:hover {
+  
+	color: rgb(0, 0, 255);
+	background-color: rgb(189, 251, 243);
+
+}
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_title">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>5</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 87 14pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>DownTube</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_left">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>41</width>
+     <height>465</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #99d9ea;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="btn_share">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+color: rgb(0, 0, 0);
+font: 75 20pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(255, 255, 0);
+border :5px solid transparent;
+border-radius : 20px;
+}
+
+QPushButton:hover {
+  
+	color: rgb(255, 0, 0);
+	background-color: rgb(0, 0, 255);
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+}
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+    </property>
+    <property name="text">
+     <string>S</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_english">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+color: rgb(0, 0, 0);
+	background-color: rgb(255, 136, 0);
+font: 75 20pt &quot;MS Shell Dlg 2&quot;;
+border :5px solid transparent;
+border-radius : 20px;
+}
+QPushButton:hover {
+  
+	color: rgb(255, 0, 0);
+	background-color: rgb(0, 0, 255);
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+}
+
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+    </property>
+    <property name="text">
+     <string>E</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_arabic">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>150</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+color: rgb(0, 0, 0);
+	background-color: rgb(255, 0, 0);
+	font: 40 20pt &quot;Arial Black&quot;;
+border :5px solid transparent;
+border-radius : 20px;
+
+}
+
+QPushButton:hover {
+  
+	color: rgb(255, 0, 0);
+	background-color: rgb(0, 0, 255);
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+}
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+    </property>
+    <property name="text">
+     <string>ع</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_black">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>420</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+color: rgb(0, 255, 8);
+font: 75 20pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(0, 0, 0);
+border :5px solid transparent;
+border-radius : 20px;
+}
+
+QPushButton:hover {
+background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_red">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>380</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+color: rgb(0, 255, 8);
+font: 75 20pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(255, 0, 0);
+border :5px solid transparent;
+border-radius : 20px;
+}
+
+QPushButton:hover {
+background-color: rgb(255, 255, 0);
+}
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_blue">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>340</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+color: rgb(0, 0, 255);
+font: 75 20pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(0, 0, 255);
+border :5px solid transparent;
+border-radius : 20px;
+}
+
+
+
+QPushButton:hover {
+   
+	background-color: rgb(0, 255, 217);
+}
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_help">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+color: rgb(0, 0, 0);
+font: 75 20pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(85, 255, 0);
+border :5px solid transparent;
+border-radius : 20px;
+}
+QPushButton:hover {
+  
+	color: rgb(255, 0, 0);
+	background-color: rgb(0, 0, 255);
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+}
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+    </property>
+    <property name="text">
+     <string>H</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="border_top">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>830</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #00a2e8;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="border_right">
+   <property name="geometry">
+    <rect>
+     <x>825</x>
+     <y>0</y>
+     <width>5</width>
+     <height>470</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #00a2e8;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="border_left">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>5</width>
+     <height>470</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #00a2e8;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="border_bottom">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>470</y>
+     <width>830</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #00a2e8;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>46</x>
+     <y>35</y>
+     <width>779</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Light">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Shadow">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Light">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Shadow">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Light">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Shadow">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>215</red>
+         <green>253</green>
+         <blue>249</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTabWidget::pane { /* The tab widget frame */
+
+	
+     }
+
+
+
+     /* Style the tab using the tab sub-control. Note that
+         it reads QTabBar _not_ QTabWidget */
+     QTabBar::tab {
+        
+	width : 200px;
+	height :20px;
+	color: rgb(255, 0, 0);
+	font: 87 10pt &quot;Arial Black&quot;;
+	background-color: rgb(153, 217, 234);
+         border: 2px solid ;
+	border-color: rgb(153, 217, 234);
+         padding: 3px;
+     }
+
+    
+ QTabBar::tab:hover {
+         background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                     stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+
+     }
+
+     QTabBar::tab:selected {
+background-color: rgb(215, 253, 249);
+	border-color: rgb(215, 253, 249);
+     }
+
+     QTabBar:tab:selected:hover {
+color: rgb(0, 255, 0);
+
+     }
+
+</string>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_1">
+    <attribute name="title">
+     <string>Download youtube video</string>
+    </attribute>
+    <widget class="QLineEdit" name="LE_url_1">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>10</y>
+       <width>461</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+     border: 4px solid #3f48cc;
+     background: white;
+	
+	
+	font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+QLineEdit:hover {
+border-color: rgb(170, 0, 255);
+
+}
+@mixin default-placeholder-text {
+color: gray;
+font-style: italic;
+font-weight: 200;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_size_1">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>338</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(189, 251, 243);
+font: 75 14pt &quot;Arial&quot;;
+color: rgb(112, 146, 190);</string>
+     </property>
+     <property name="text">
+      <string>0 MB/0 MB</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_current_1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>250</y>
+       <width>311</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(189, 251, 243);
+font: 75 14pt &quot;Arial&quot;;
+color: rgb(112, 146, 190);</string>
+     </property>
+     <property name="text">
+      <string>Current downloading video</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_res_1">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>340</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>25</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+
+   color: #11FF00;
+   font-family: Arial;
+   font-size: 20px;
+   font-weight: 200;
+
+   background-color: #3200FA;
+
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+QPushButton:hover {
+   background: #2BAAFF;
+   background-image: -webkit-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -moz-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -ms-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -o-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: linear-gradient(to bottom, #2BAAFF, #3178C7);
+   text-decoration: none;
+}
+
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+     </property>
+     <property name="text">
+      <string>Resume</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="pb_progress_1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>290</y>
+       <width>731</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QProgressBar
+{
+border :1px solid;
+	border-color: rgb(0, 0, 255);
+	background-color: rgb(255, 255, 255);
+
+}
+ QProgressBar:chunk {
+     
+	background-color: rgb(25, 255, 0);
+     width: 20px;
+ }
+ QProgressBar:hover {
+border-color: rgb(170, 0, 255);
+}
+QProgressBar:chunk:hover {    
+background-color: rgb(75, 226, 0);
+ }</string>
+     </property>
+     <property name="locale">
+      <locale language="English" country="UnitedStates"/>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_adv_1">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>373</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>25</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+
+   color: #11FF00;
+   font-family: Arial;
+   font-size: 20px;
+   font-weight: 200;
+
+   background-color: #3200FA;
+
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+QPushButton:hover {
+   background: #2BAAFF;
+   background-image: -webkit-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -moz-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -ms-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -o-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: linear-gradient(to bottom, #2BAAFF, #3178C7);
+   text-decoration: none;
+}
+
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+     </property>
+     <property name="text">
+      <string>Advanced</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_browse_1">
+     <property name="geometry">
+      <rect>
+       <x>662</x>
+       <y>60</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>14</pointsize>
+       <weight>10</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color: rgb(85, 255, 0);
+	font: 87 14pt &quot;Arial Black&quot;;
+	background-color: rgb(0, 0, 255);
+
+}
+
+QPushButton:hover {
+background-color: rgb(0, 0, 124);
+}
+
+QPushButton:pressed {
+background-color: rgb(0, 170, 255);}
+</string>
+     </property>
+     <property name="text">
+      <string>Browse</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_speed_1">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>260</y>
+       <width>141</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(189, 251, 243);
+font: 75 14pt &quot;Arial&quot;;
+color: rgb(112, 146, 190);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_save1">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#bdfbf3;
+font: 87 14pt &quot;Arial Black&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_quality1">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>110</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#bdfbf3;
+font: 87 14pt &quot;Arial Black&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Quality</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_save_1">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>60</y>
+       <width>461</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+     border: 4px solid #3f48cc;
+     background: white;
+	
+	font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+QLineEdit:hover {
+border-color: rgb(170, 0, 255);
+
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_url1">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>10</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#bdfbf3;
+font: 87 14pt &quot;Arial Black&quot;;</string>
+     </property>
+     <property name="text">
+      <string>URL</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line1">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>210</y>
+       <width>531</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(208, 208, 208);</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_sp1">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>260</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(189, 251, 243);
+font: 75 14pt &quot;Arial&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Speed :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_stop_1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>340</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>25</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+
+   
+	color: rgb(85, 255, 0);
+   font-family: Arial;
+   font-size: 20px;
+   font-weight: 200;
+
+   background-color: #3200FA;
+
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+QPushButton:hover {
+   background: #2BAAFF;
+   background-image: -webkit-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -moz-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -ms-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -o-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: linear-gradient(to bottom, #2BAAFF, #3178C7);
+   text-decoration: none;
+}
+
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_quality_1">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>110</y>
+       <width>461</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>10</pointsize>
+       <weight>9</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QComboBox {
+    border: 4px solid #3f48cc;
+	background-color: rgb(255, 255, 255);
+	font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+
+ }
+
+
+ QComboBox::drop-down {
+	width:33;
+     border-left-width: 0px;
+ }
+
+ QComboBox::down-arrow {
+		image:url(:/icon/ar.png);
+		width : 35 px;
+	    height : 40 px;
+ }
+
+ QComboBox:hover {
+	
+	border-color: rgb(170, 0, 255);
+}
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_down_1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>180</y>
+       <width>171</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>25</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+border-color: rgb(50, 0, 250);
+   border-radius: 20px;
+   color: #11FF00;
+   font-family: Arial;
+   font-size: 30px;
+   font-weight: 200;
+
+   background-color: #3200FA;
+
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+QPushButton:hover {
+   background: #2BAAFF;
+}
+
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+     </property>
+     <property name="text">
+      <string>Download</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_check_1">
+     <property name="geometry">
+      <rect>
+       <x>662</x>
+       <y>10</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>14</pointsize>
+       <weight>10</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color: rgb(85, 255, 0);
+	font: 87 14pt &quot;Arial Black&quot;;
+	background-color: rgb(0, 0, 255);
+
+}
+
+QPushButton:hover {
+background-color: rgb(0, 0, 124);
+}
+
+QPushButton:pressed {
+background-color: rgb(0, 170, 255);}
+</string>
+     </property>
+     <property name="text">
+      <string>Check</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_cancel_1">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>340</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>25</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+
+   color: #11FF00;
+   font-family: Arial;
+   font-size: 20px;
+   font-weight: 200;
+
+   background-color: #3200FA;
+
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+QPushButton:hover {
+   background: #2BAAFF;
+   background-image: -webkit-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -moz-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -ms-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -o-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: linear-gradient(to bottom, #2BAAFF, #3178C7);
+   text-decoration: none;
+}
+
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+     </property>
+     <property name="text">
+      <string>cancel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_time_1">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>230</y>
+       <width>131</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(189, 251, 243);
+font: 75 14pt &quot;Arial&quot;;
+color: rgb(112, 146, 190);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_rem_1">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>230</y>
+       <width>81</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(189, 251, 243);
+font: 75 14pt &quot;Arial&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Remain:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Download youtube playlist</string>
+    </attribute>
+    <widget class="QLineEdit" name="LE_url_2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>10</y>
+       <width>461</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+     border: 4px solid #3f48cc;
+     background: white;
+	
+	font: 75 12pt &quot;Arial&quot;;
+ }
+
+QLineEdit:hover {
+border-color: rgb(170, 0, 255);
+
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_size_2">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>338</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(189, 251, 243);
+font: 75 14pt &quot;Arial&quot;;
+color: rgb(112, 146, 190);</string>
+     </property>
+     <property name="text">
+      <string>0 MB/0 MB</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_current_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>250</y>
+       <width>311</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(189, 251, 243);
+font: 75 14pt &quot;Arial&quot;;
+color: rgb(112, 146, 190);</string>
+     </property>
+     <property name="text">
+      <string>Current downloading video</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_res_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>340</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>25</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+
+   color: #11FF00;
+   font-family: Arial;
+   font-size: 20px;
+   font-weight: 200;
+
+   background-color: #3200FA;
+
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+QPushButton:hover {
+   background: #2BAAFF;
+   background-image: -webkit-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -moz-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -ms-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -o-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: linear-gradient(to bottom, #2BAAFF, #3178C7);
+   text-decoration: none;
+}
+
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+     </property>
+     <property name="text">
+      <string>Resume</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="pb_progress_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>290</y>
+       <width>731</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QProgressBar
+{
+border :1px solid;
+	border-color: rgb(0, 0, 255);
+	background-color: rgb(255, 255, 255);
+
+}
+ QProgressBar:chunk {
+     
+	background-color: rgb(25, 255, 0);
+     width: 20px;
+ }
+ QProgressBar:hover {
+border-color: rgb(170, 0, 255);
+}
+QProgressBar:chunk:hover {    
+background-color: rgb(75, 226, 0);
+ }</string>
+     </property>
+     <property name="locale">
+      <locale language="English" country="UnitedStates"/>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_adv_2">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>373</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>25</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+
+   color: #11FF00;
+   font-family: Arial;
+   font-size: 20px;
+   font-weight: 200;
+
+   background-color: #3200FA;
+
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+QPushButton:hover {
+   background: #2BAAFF;
+   background-image: -webkit-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -moz-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -ms-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -o-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: linear-gradient(to bottom, #2BAAFF, #3178C7);
+   text-decoration: none;
+}
+
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+     </property>
+     <property name="text">
+      <string>Advanced</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_browse_2">
+     <property name="geometry">
+      <rect>
+       <x>662</x>
+       <y>60</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>14</pointsize>
+       <weight>10</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color: rgb(85, 255, 0);
+	font: 87 14pt &quot;Arial Black&quot;;
+	background-color: rgb(0, 0, 255);
+
+}
+
+QPushButton:hover {
+background-color: rgb(0, 0, 124);
+}
+
+QPushButton:pressed {
+background-color: rgb(0, 170, 255);}
+</string>
+     </property>
+     <property name="text">
+      <string>Browse</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_speed_2">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>250</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(189, 251, 243);
+font: 75 14pt &quot;Arial&quot;;
+color: rgb(112, 146, 190);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_save_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#bdfbf3;
+font: 87 14pt &quot;Arial Black&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_quality_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>110</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#bdfbf3;
+font: 87 14pt &quot;Arial Black&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Quality</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_save_2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>60</y>
+       <width>461</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+     border: 4px solid #3f48cc;
+     background: white;
+	
+	font: 75 12pt &quot;Arial&quot;;
+ }
+
+QLineEdit:hover {
+border-color: rgb(170, 0, 255);
+
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_url_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>10</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#bdfbf3;
+font: 87 14pt &quot;Arial Black&quot;;</string>
+     </property>
+     <property name="text">
+      <string>URL</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>210</y>
+       <width>531</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(208, 208, 208);</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_sp_5">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>250</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(189, 251, 243);
+font: 75 14pt &quot;Arial&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Speed :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_stop_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>340</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>25</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+
+   
+	color: rgb(85, 255, 0);
+   font-family: Arial;
+   font-size: 20px;
+   font-weight: 200;
+
+   background-color: #3200FA;
+
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+QPushButton:hover {
+   background: #2BAAFF;
+   background-image: -webkit-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -moz-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -ms-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: -o-linear-gradient(top, #2BAAFF, #3178C7);
+   background-image: linear-gradient(to bottom, #2BAAFF, #3178C7);
+   text-decoration: none;
+}
+
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_quality_2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>110</y>
+       <width>461</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QComboBox {
+    border: 4px solid #3f48cc;
+	background-color: rgb(255, 255, 255);
+
+ }
+
+
+ QComboBox::drop-down {
+	width:33;
+     border-left-width: 0px;
+ }
+
+ QComboBox::down-arrow {
+		image:url(:/icon/ar.png);
+		width : 35 px;
+	    height : 40 px;
+ }
+
+ QComboBox:hover {
+	
+	border-color: rgb(170, 0, 255);
+}
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_down_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>180</y>
+       <width>171</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>25</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+
+   border-radius: 20px;
+   color: #11FF00;
+   font-family: Arial;
+   font-size: 30px;
+   font-weight: 200;
+
+   background-color: #3200FA;
+
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+QPushButton:hover {
+   background: #2BAAFF;
+}
+
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}
+</string>
+     </property>
+     <property name="text">
+      <string>Download</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_check_2">
+     <property name="geometry">
+      <rect>
+       <x>662</x>
+       <y>10</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>14</pointsize>
+       <weight>10</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color: rgb(85, 255, 0);
+	font: 87 14pt &quot;Arial Black&quot;;
+	background-color: rgb(0, 0, 255);
+
+}
+
+QPushButton:hover {
+background-color: rgb(0, 0, 124);
+}
+
+QPushButton:pressed {
+background-color: rgb(0, 170, 255);}
+</string>
+     </property>
+     <property name="text">
+      <string>Check</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>480</y>
+     <width>761</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+</string>
+   </property>
+   <property name="title">
+    <string>video information</string>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#bdfbf3;
+font: 50 10pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Title :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="adv_dur">
+    <property name="geometry">
+     <rect>
+      <x>676</x>
+      <y>130</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 50 8pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="adv_likes">
+    <property name="geometry">
+     <rect>
+      <x>561</x>
+      <y>153</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 50 8pt &quot;Arial Black&quot;;
+background-color: rgb(189, 251, 243);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="adv_dis">
+    <property name="geometry">
+     <rect>
+      <x>561</x>
+      <y>173</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 50 8pt &quot;Arial Black&quot;;
+background-color: rgb(189, 251, 243);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#bdfbf3;
+font: 50 10pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Date :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#bdfbf3;
+font: 50 10pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Description :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="adv_date">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>40</y>
+      <width>461</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(189, 251, 243);
+font: 50 10pt &quot;Arial Black&quot;;
+color: rgb(112, 146, 190);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="adv_views">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>156</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(189, 251, 243);
+font: 50 8pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="adv_des">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>80</y>
+      <width>421</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);
+color:rgb(79, 158, 0);</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="adv_author">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>60</y>
+      <width>461</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(189, 251, 243);
+font: 50 10pt &quot;Arial Black&quot;;
+color: rgb(112, 146, 190);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#bdfbf3;
+font: 50 10pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Author :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>152</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="photo.qrc">:/icon/like.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>170</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="photo.qrc">:/icon/dis.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>156</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="photo.qrc">:/icon/eye1.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="adv_title">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>20</y>
+      <width>461</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(189, 251, 243);
+font: 50 10pt &quot;Arial Black&quot;;
+color: rgb(112, 146, 190);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="adv_thumb">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>20</y>
+      <width>221</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 227, 227);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="adv_profile">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>103</y>
+      <width>90</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>adv_likes</zorder>
+   <zorder>adv_dis</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_8</zorder>
+   <zorder>adv_date</zorder>
+   <zorder>adv_views</zorder>
+   <zorder>adv_des</zorder>
+   <zorder>adv_author</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>adv_title</zorder>
+   <zorder>adv_thumb</zorder>
+   <zorder>adv_dur</zorder>
+   <zorder>adv_profile</zorder>
+  </widget>
+  <zorder>frame_top</zorder>
+  <zorder>border_top</zorder>
+  <zorder>border_right</zorder>
+  <zorder>frame_left</zorder>
+  <zorder>border_left</zorder>
+  <zorder>tabWidget</zorder>
+  <zorder>border_bottom</zorder>
+  <zorder>groupBox</zorder>
+ </widget>
+ <resources>
+  <include location="photo.qrc"/>
+ </resources>
+ <connections/>
+</ui>

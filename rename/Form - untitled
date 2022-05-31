@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>797</width>
+    <height>393</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+background-color: rgb(255, 255, 255);
+}
+QLineEdit {
+     border: 2px solid #3f48cc;
+     background: white;
+	
+	font: 75 14pt &quot;Arial&quot;;
+ }
+
+QLineEdit:hover {
+border-color:rgb(0, 255, 0);
+
+}
+QLabel {
+background-color: rgb(173, 173, 173);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QPushButton {
+border-color: rgb(50, 0, 250);
+   border-radius: 10px;
+   color: #11FF00;
+   font-size: 20px;
+   font-weight: 200;
+
+   background-color: #3200FA;
+
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+QPushButton:hover {
+   background: #2BAAFF;
+}
+
+QPushButton:pressed {
+background-color: rgb(86, 12, 198);}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="4">
+    <widget class="QPushButton" name="btn_ip3">
+     <property name="text">
+      <string>0.0.0.0</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3" rowspan="2">
+    <widget class="QLineEdit" name="ip2"/>
+   </item>
+   <item row="4" column="3">
+    <widget class="QLineEdit" name="user2"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>user : </string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>pass :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QLineEdit" name="pass1"/>
+   </item>
+   <item row="1" column="2">
+    <widget class="QTextEdit" name="status1">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QTextEdit" name="status3">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>IP :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QLineEdit" name="user1"/>
+   </item>
+   <item row="0" column="3">
+    <widget class="QPushButton" name="btn_ip2">
+     <property name="text">
+      <string>0.0.0.0</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="4">
+    <widget class="QLineEdit" name="user3"/>
+   </item>
+   <item row="5" column="3">
+    <widget class="QLineEdit" name="pass2"/>
+   </item>
+   <item row="5" column="4">
+    <widget class="QLineEdit" name="pass3"/>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="bt_ip1">
+     <property name="text">
+      <string>0.0.0.0</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2" colspan="3">
+    <widget class="QPushButton" name="btn_save">
+     <property name="text">
+      <string>save</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QTextEdit" name="status2">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2" rowspan="2">
+    <widget class="QLineEdit" name="ip1"/>
+   </item>
+   <item row="2" column="4" rowspan="2">
+    <widget class="QLineEdit" name="ip3"/>
+   </item>
+   <item row="7" column="0">
+    <widget class="QCheckBox" name="hide2">
+     <property name="text">
+      <string>ip 2</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QCheckBox" name="hide3">
+     <property name="text">
+      <string>ip 3</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>bt_ip1</tabstop>
+  <tabstop>btn_ip2</tabstop>
+  <tabstop>btn_ip3</tabstop>
+  <tabstop>ip1</tabstop>
+  <tabstop>ip2</tabstop>
+  <tabstop>ip3</tabstop>
+  <tabstop>user1</tabstop>
+  <tabstop>user2</tabstop>
+  <tabstop>user3</tabstop>
+  <tabstop>pass1</tabstop>
+  <tabstop>pass2</tabstop>
+  <tabstop>pass3</tabstop>
+  <tabstop>btn_save</tabstop>
+  <tabstop>hide2</tabstop>
+  <tabstop>hide3</tabstop>
+  <tabstop>status1</tabstop>
+  <tabstop>status2</tabstop>
+  <tabstop>status3</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
