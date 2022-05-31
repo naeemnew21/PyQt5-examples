@@ -6,3 +6,4 @@ this repo contains some Gui projects for desktop written in python and PyQt5
 these examples for trials and learn, so it contains a lot of logic errors not syntax errors
 
 so code can be rewritten in better way.
+it also uses txt files instead database.
